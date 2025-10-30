@@ -14,3 +14,13 @@ The set of journals is selected by my personal interests. If you want to see a j
 
 **Caution**: due to some unknown reasons of streamlit, sometimes some browsers will not work correctly for the app and the page keeps blank. One can try either clearing the cache/cookies or simply using another browser.
 
+
+git command
+```bash
+cd "/Users/ynbsztl/Documents/Python/github_pub_repo/Econ-Paper-Search"
+git add .
+git status
+git commit -m ‘version_1.2_stable’
+git push
+```
+

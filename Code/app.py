@@ -20,7 +20,8 @@ def load_data_and_combine():
     df3 = pd.read_csv("Data/papers_2010s.csv", **args)
     df4 = pd.read_csv("Data/papers_2015s.csv", **args)
     df5 = pd.read_csv("Data/papers_2020s.csv", **args)
-    df = pd.concat([df1, df2, df3, df4, df5], axis=0)
+    df6 = pd.read_csv("Data/papers_2025s.csv", **args)    
+    df = pd.concat([df1, df2, df3, df4, df5, df6], axis=0)
     return df
 
 
@@ -341,7 +342,7 @@ def main():
         journals = set(journals)
 
     year_min = 1900
-    year_max = 2024
+    year_max = 2026
 
     c1, c2, c3, c4 = form.columns(4)
     year_begin = c1.number_input('Year from', value=1980, min_value=year_min, max_value=year_max)
